@@ -28,3 +28,4 @@ C:\Dev\HireMatt\HireMattApp\obj\Debug\net8.0\refint\HireMattApp.dll
 C:\Dev\HireMatt\HireMattApp\obj\Debug\net8.0\HireMattApp.pdb
 C:\Dev\HireMatt\HireMattApp\obj\Debug\net8.0\HireMattApp.genruntimeconfig.cache
 C:\Dev\HireMatt\HireMattApp\obj\Debug\net8.0\ref\HireMattApp.dll
+C:\Dev\HireMatt\HireMattApp\obj\Debug\net8.0\HireMattApp.sourcelink.json
