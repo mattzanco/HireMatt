@@ -1,6 +1,9 @@
 # Build results
-HireMattApp/bin
-HireMattApp/obj
+# Ignore build output in any project folder
+**/bin/
+**/obj/
+bin/
+obj/
 
 # Visual Studio
 .vs/
