@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HireMattApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b7f940cb4bf0bd27572b7f204b718343a73080af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ace1d8e8a3bec08aebd96a4f560d294cc2ee8a09")]
 [assembly: System.Reflection.AssemblyProductAttribute("HireMattApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HireMattApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
