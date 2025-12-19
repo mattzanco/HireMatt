@@ -89,4 +89,10 @@ body::before {
     margin-top: 4vh;
     margin-bottom: 4vh;
   }
+  .d-flex.align-items-center.justify-content-center {
+    min-height: 100vh;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
 }
