@@ -4,7 +4,7 @@
 
 <div class="d-flex justify-content-center align-items-center min-vh-100">
     <div class="business-card p-5 w-100" style="max-width: 600px;">
-        <div class="text-center">
+        <div class="text-center" id="fadeInCard">
             <h1 class="display-4 text-muted" style="font-size:2rem; font-weight:bold;">About Matt Zanco</h1>
         </div>
         <div class="text-start">
@@ -20,8 +20,6 @@
 
             <p>Outside of work, Matt contributes to open source, speaks at meetups, and enjoys exploring new tech trends. He’s open to contract or full-time opportunities and is fully remote-ready. If you’re looking for a senior engineer who combines deep expertise with a collaborative spirit, let’s connect and build something remarkable together.</p>
             
-            <p>Open to contracts or full time opportunities. Remote ready.</p>
-
             <p> — Matt Zanco, Sr Software Engineer.</p>
             <div class="text-center mt-4">
                 <div class="d-flex flex-column flex-md-row justify-content-center gap-2">
@@ -38,6 +36,16 @@
             btn.addEventListener('mouseup', function() { this.blur(); });
             btn.addEventListener('mouseleave', function() { this.blur(); });
         });
+
+        // Fade in animation for business card
+        var businessCard = document.querySelector('.business-card');
+        if (businessCard) {
+            businessCard.style.opacity = 0;
+            businessCard.style.transition = 'opacity 0.7s';
+            setTimeout(function() {
+                businessCard.style.opacity = 1;
+            }, 50);
+        }
     });
 </script>
 </div>

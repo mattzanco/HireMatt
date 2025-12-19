@@ -4,6 +4,7 @@
 
 <div class="d-flex justify-content-center align-items-center min-vh-100">
     <div class="business-card p-5 w-100" style="max-width: 600px;">
+            <!-- Fade-in animation on page load -->
         <div class="text-center">
             <h1 class="display-4 text-muted" style="font-size:2rem; font-weight:bold;">Building software that moves business forward</h1>
         </div>
@@ -29,6 +30,16 @@
             btn.addEventListener('mouseup', function() { this.blur(); });
             btn.addEventListener('mouseleave', function() { this.blur(); });
         });
+
+        // Fade in animation for business card
+        var businessCard = document.querySelector('.business-card');
+        if (businessCard) {
+            businessCard.style.opacity = 0;
+            businessCard.style.transition = 'opacity 0.7s';
+            setTimeout(function() {
+                businessCard.style.opacity = 1;
+            }, 50);
+        }
     });
 </script>
 </div>
