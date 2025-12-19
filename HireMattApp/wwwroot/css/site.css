@@ -1,3 +1,21 @@
+@media (max-width: 576px) {
+  h1.display-4 {
+    font-size: 1.25rem !important;
+    font-weight: bold;
+  }
+  p {
+    font-size: 0.95rem !important;
+  }
+}
+/* Make 'Learn More' link blue */
+.learn-more-link {
+  color: #258cfb !important;
+  text-decoration: underline;
+}
+/* Make button text white on hover */
+.btn:hover, .btn:focus {
+  color: #fff !important;
+}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 html {
