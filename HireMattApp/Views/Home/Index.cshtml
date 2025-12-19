@@ -23,4 +23,12 @@
             </div>
         </div>
     </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.btn').forEach(function(btn) {
+            btn.addEventListener('mouseup', function() { this.blur(); });
+            btn.addEventListener('mouseleave', function() { this.blur(); });
+        });
+    });
+</script>
 </div>
