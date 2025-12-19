@@ -40,8 +40,14 @@
                 businessCard.style.opacity = 1;
             }, 50);
         }
-                // Disable page-level scrolling on Index page only
-                document.body.style.overflow = 'hidden';
+                // Show disabled page-level scrollbar on Index page only
+                document.body.style.overflowY = 'scroll';
+                document.body.style.position = 'fixed';
+                document.body.style.width = '100%';
+                document.body.style.top = '0';
+                document.body.style.left = '0';
+                document.body.style.right = '0';
+                document.body.style.bottom = '0';
     });
 </script>
 </div>
