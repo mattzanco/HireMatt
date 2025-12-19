@@ -3,6 +3,9 @@
     font-size: 1.25rem !important;
     font-weight: bold;
   }
+  .about-page {
+    margin-top: 4rem !important;
+  }
   p {
     font-size: 0.95rem !important;
   }
@@ -86,8 +89,10 @@ body::before {
 
 @media (max-width: 576px) {
   .business-card {
-    margin-top: 2rem;
     margin-bottom: 2vh;
+  }
+  .index-card {
+    margin-top: -2rem;
   }
   .d-flex.align-items-center.justify-content-center {
     min-height: 100vh;
