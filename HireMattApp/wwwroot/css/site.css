@@ -7,6 +7,9 @@
     margin-top: 0.67rem !important;
     margin-bottom: 0.67rem !important;
   }
+  .about-page body {
+    margin-top: 60px !important;
+  }
   p {
     font-size: 0.95rem !important;
   }
@@ -59,7 +62,6 @@ html {
 
 body {
   margin-bottom: 60px;
-  margin-top: 60px;
   background: none;
   position: relative;
   color: #22223b !important;
