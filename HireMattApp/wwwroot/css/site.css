@@ -3,8 +3,9 @@
     font-size: 1.25rem !important;
     font-weight: bold;
   }
-  .about-page {
-    margin-top: 4rem !important;
+  .about-page .business-card {
+    margin-top: 0.67rem !important;
+    margin-bottom: 0.67rem !important;
   }
   p {
     font-size: 0.95rem !important;
