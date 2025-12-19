@@ -1,14 +1,10 @@
 @media (max-width: 576px) {
   h1.display-4 {
-    font-size: 1.25rem !important;
     font-weight: bold;
   }
   .about-page .business-card {
-    margin-top: 0.67rem !important;
-    margin-bottom: 0.67rem !important;
-  }
-  .about-page body {
     margin-top: 60px !important;
+    margin-bottom: 0.67rem !important;
   }
   p {
     font-size: 0.95rem !important;
