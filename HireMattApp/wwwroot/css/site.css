@@ -34,10 +34,24 @@ html {
 
 body {
   margin-bottom: 60px;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('/codebackground.jpg');
+  background: none;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url('/codeanimation.gif');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  filter: blur(6px) brightness(0.9);
+  pointer-events: none;
 }
 
 .business-card {
