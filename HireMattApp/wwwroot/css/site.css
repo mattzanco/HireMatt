@@ -86,7 +86,7 @@ body::before {
 
 @media (max-width: 576px) {
   .business-card {
-    margin-top: 2vh;
+    margin-top: 2rem;
     margin-bottom: 2vh;
   }
   .d-flex.align-items-center.justify-content-center {
