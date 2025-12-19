@@ -83,7 +83,7 @@ body::before {
   background: #fff !important;
   border-radius: 1.5rem !important;
   box-shadow: 0 8px 32px rgba(71, 74, 115, 0.18), 0 1.5px 6px rgba(71, 74, 115, 0.10);
-  margin-top: 2.5vh;
+  margin-top: 60px;
   margin-bottom: 2.5vh;
 }
 
