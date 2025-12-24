@@ -192,7 +192,7 @@ body::before {
 
 @media (max-width: 576px) {
   .business-card {
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
   }
   .about-page {
     padding-top: 20px;
