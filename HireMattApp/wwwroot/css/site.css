@@ -126,6 +126,10 @@ body {
   color: #6C757D !important;
 }
 
+body:has(.index-card) {
+  margin-bottom: 0;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -148,6 +152,42 @@ body::before {
   box-shadow: 0 8px 32px rgba(71, 74, 115, 0.18), 0 1.5px 6px rgba(71, 74, 115, 0.10);
   margin-top: 60px;
   margin-bottom: 2.5vh;
+}
+
+@media (min-width: 577px) {
+  .about-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-page .business-card {
+    margin-top: 5vh;
+    margin-bottom: 2.5vh;
+  }
+  
+  body:has(.index-card) {
+    overflow: hidden;
+    scrollbar-color: #cccccc transparent;
+  }
+  
+  body:has(.index-card)::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body:has(.index-card)::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  body:has(.index-card)::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 6px;
+  }
+  
+  body:has(.index-card)::-webkit-scrollbar-thumb:hover {
+    background: #cccccc;
+  }
 }
 
 @media (max-width: 576px) {
