@@ -24,10 +24,6 @@
   h1.display-4 {
     font-weight: bold;
   }
-  .about-page .business-card {
-    margin-top: 60px !important;
-    margin-bottom: 0.67rem !important;
-  }
   p {
     font-size: 0.95rem !important;
   }
@@ -158,8 +154,9 @@ body::before {
   .business-card {
     margin-bottom: 2vh;
   }
-  .index-card {
-    margin-top: -2rem;
+  .about-page {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .d-flex.align-items-center.justify-content-center {
     min-height: 100vh;
