@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireMatt.Api", "HireMatt.Api\HireMatt.Api.csproj", "{BCB6F14D-82D4-4EC4-9F30-8251257D8E95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireMatt.App", "HireMatt.App\HireMatt.App.csproj", "{2AC9FC9D-D182-4631-800C-E44B5F417665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireMatt.Domain", "HireMatt.Domain\HireMatt.Domain.csproj", "{206E06D3-01B4-4081-B40F-3DE5B6704CBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireMatt.Endpoint", "HireMatt.Endpoint\HireMatt.Endpoint.csproj", "{E20E583B-E7C7-4B92-9E64-3A58E34B6762}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireMatt.Services", "HireMatt.Services\HireMatt.Services.csproj", "{6C2B5C34-7C00-4C85-995D-9CD4E1DE2D03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireMatt.Storage", "HireMatt.Storage\HireMatt.Storage.csproj", "{241432CD-223E-4FC9-83EE-72C0EB094864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireMatt.Tests", "HireMatt.Tests\HireMatt.Tests.csproj", "{DE21F3A2-FEBC-46D0-B2FE-37C8B8F8F002}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCB6F14D-82D4-4EC4-9F30-8251257D8E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCB6F14D-82D4-4EC4-9F30-8251257D8E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCB6F14D-82D4-4EC4-9F30-8251257D8E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCB6F14D-82D4-4EC4-9F30-8251257D8E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC9FC9D-D182-4631-800C-E44B5F417665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC9FC9D-D182-4631-800C-E44B5F417665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC9FC9D-D182-4631-800C-E44B5F417665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC9FC9D-D182-4631-800C-E44B5F417665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{206E06D3-01B4-4081-B40F-3DE5B6704CBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206E06D3-01B4-4081-B40F-3DE5B6704CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206E06D3-01B4-4081-B40F-3DE5B6704CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206E06D3-01B4-4081-B40F-3DE5B6704CBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E20E583B-E7C7-4B92-9E64-3A58E34B6762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E20E583B-E7C7-4B92-9E64-3A58E34B6762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E20E583B-E7C7-4B92-9E64-3A58E34B6762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E20E583B-E7C7-4B92-9E64-3A58E34B6762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C2B5C34-7C00-4C85-995D-9CD4E1DE2D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C2B5C34-7C00-4C85-995D-9CD4E1DE2D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C2B5C34-7C00-4C85-995D-9CD4E1DE2D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C2B5C34-7C00-4C85-995D-9CD4E1DE2D03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{241432CD-223E-4FC9-83EE-72C0EB094864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{241432CD-223E-4FC9-83EE-72C0EB094864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{241432CD-223E-4FC9-83EE-72C0EB094864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{241432CD-223E-4FC9-83EE-72C0EB094864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE21F3A2-FEBC-46D0-B2FE-37C8B8F8F002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE21F3A2-FEBC-46D0-B2FE-37C8B8F8F002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE21F3A2-FEBC-46D0-B2FE-37C8B8F8F002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE21F3A2-FEBC-46D0-B2FE-37C8B8F8F002}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
