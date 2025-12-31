@@ -21,7 +21,7 @@ app.MapGet("/ping", () =>
 {
     return true;
 })
-.WithName("GetWeatherForecast")
+.WithName("Ping")
 .WithOpenApi();
 
 app.Run();
