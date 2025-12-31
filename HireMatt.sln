@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireMatt.Api", "HireMatt.Api\HireMatt.Api.csproj", "{BCB6F14D-82D4-4EC4-9F30-8251257D8E95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireMatt.App", "HireMatt.App\HireMatt.App.csproj", "{2AC9FC9D-D182-4631-800C-E44B5F417665}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireMatt.Mvc", "HireMatt.Mvc\HireMatt.Mvc.csproj", "{2AC9FC9D-D182-4631-800C-E44B5F417665}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireMatt.Domain", "HireMatt.Domain\HireMatt.Domain.csproj", "{206E06D3-01B4-4081-B40F-3DE5B6704CBD}"
 EndProject
