@@ -1,22 +1,68 @@
-﻿<!DOCTYPE html>
+﻿@using System.Text.Json
+@{
+    var pathBase = Context.Request.PathBase.HasValue ? Context.Request.PathBase.Value : "";
+    var canonical = $"{Context.Request.Scheme}://{Context.Request.Host}{pathBase}{Context.Request.Path}";
+    var defaultMeta = "Matt Zanco — senior full-stack software engineer (.NET, cloud, APIs). Clear communication, reliable delivery, remote-ready. Open to contract or full-time roles.";
+    var metaDescription = ViewData["MetaDescription"] as string ?? defaultMeta;
+    var pageTitle = ViewData["Title"] as string ?? "Matt Zanco";
+    var ogTitle = ViewData["OgTitle"] as string ?? pageTitle;
+    var ogImage = ViewData["OgImage"] as string ?? $"{Context.Request.Scheme}://{Context.Request.Host}{pathBase}/aboutpicture.jpg";
+    var personJsonLd = JsonSerializer.Serialize(new Dictionary<string, object?>
+    {
+        ["@context"] = "https://schema.org",
+        ["@type"] = "Person",
+        ["name"] = "Matt Zanco",
+        ["jobTitle"] = "Senior Software Engineer",
+        ["email"] = "mattzanco@gmail.com",
+        ["url"] = canonical,
+        ["sameAs"] = new[] { "https://www.linkedin.com/in/matt-zanco-107723348/", "https://github.com/mattzanco" },
+        ["knowsAbout"] = new[] { ".NET", "C#", "Azure", "AWS", "API design", "SQL Server", "MongoDB", "TypeScript", "JavaScript" }
+    });
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"]</title>
+    <meta name="description" content="@metaDescription" />
+    <meta name="author" content="Matt Zanco" />
+    <meta name="theme-color" content="#474a73" />
+    <link rel="canonical" href="@canonical" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@ogTitle" />
+    <meta property="og:description" content="@metaDescription" />
+    <meta property="og:url" content="@canonical" />
+    <meta property="og:image" content="@ogImage" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="@ogTitle" />
+    <meta name="twitter:description" content="@metaDescription" />
+    <title>@pageTitle</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/HireMattApp.styles.css" asp-append-version="true" />
+    <script type="application/ld+json">@Html.Raw(personJsonLd)</script>
 </head>
-<body class="d-flex align-items-center justify-content-center">
-    <!-- Navbar removed per request -->
-    <div class="container text-center">
-        <main role="main" class="pb-3 w-100">
-            @RenderBody()
-        </main>
-    </div>
-
-    <!-- Footer removed per request -->
+<body class="site-body">
+    <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <div class="container-fluid px-3 d-flex align-items-center justify-content-between flex-wrap gap-2 py-2">
+            <a class="site-brand" asp-controller="Home" asp-action="Index">Matt Zanco</a>
+            <nav class="site-nav" aria-label="Primary">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+                <a asp-controller="Home" asp-action="About">About</a>
+                <a asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main-content" role="main" class="site-main">
+        @RenderBody()
+    </main>
+    <footer class="site-footer">
+        <div class="container-fluid px-3 py-3 text-center small text-muted">
+            <span>© @DateTime.UtcNow.Year Matt Zanco · Available for senior engineering roles · </span>
+            <a asp-controller="Home" asp-action="Privacy" class="text-muted">Privacy</a>
+        </div>
+    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

@@ -1,3 +1,118 @@
+/* Layout: hiring site */
+.site-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(71, 74, 115, 0.12);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+}
+
+.site-brand {
+  font-weight: 700;
+  color: #252525 !important;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.site-brand:hover {
+  color: #5a7fa8 !important;
+}
+
+.site-nav a {
+  margin-left: 1rem;
+  color: #5a7fa8 !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  text-decoration: underline;
+}
+
+.site-footer {
+  margin-top: auto;
+  background: rgba(255, 255, 255, 0.88);
+  border-top: 1px solid rgba(71, 74, 115, 0.1);
+}
+
+.site-footer a {
+  color: #5a7fa8 !important;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 10000;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #252525 !important;
+  border-radius: 0.25rem;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  outline: 2px solid #258cfb;
+}
+
+.letter-spacing {
+  letter-spacing: 0.12em;
+}
+
+.skills-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.skill-pill {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #3d4154 !important;
+  background: rgba(71, 74, 115, 0.08);
+  border: 1px solid rgba(71, 74, 115, 0.15);
+  border-radius: 999px;
+}
+
+.btn-hire-primary {
+  color: #fff !important;
+  background-color: #474a73 !important;
+  border-color: #474a73 !important;
+  font-weight: 600;
+}
+
+.btn-hire-primary:hover,
+.btn-hire-primary:focus {
+  background-color: #3a3d5e !important;
+  border-color: #3a3d5e !important;
+  color: #fff !important;
+}
+
+.about-photo {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Muted purple for LinkedIn button */
 .btn-outline-purple.linkedin-btn {
   color: #7c5ea8 !important;
@@ -121,7 +236,7 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  margin-bottom: 0;
   background: none;
   position: relative;
   color: #6C757D !important;
@@ -168,27 +283,6 @@ body::before {
     margin-bottom: 2.5vh;
   }
   
-  body:has(.index-card) {
-    overflow: hidden;
-    scrollbar-color: #cccccc transparent;
-  }
-  
-  body:has(.index-card)::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  body:has(.index-card)::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  body:has(.index-card)::-webkit-scrollbar-thumb {
-    background: #cccccc;
-    border-radius: 6px;
-  }
-  
-  body:has(.index-card)::-webkit-scrollbar-thumb:hover {
-    background: #cccccc;
-  }
 }
 
 @media (max-width: 576px) {
