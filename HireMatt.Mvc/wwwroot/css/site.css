@@ -5,33 +5,16 @@
   flex-direction: column;
 }
 
-/* ≥640px: viewport-locked shell — scroll lives in .site-main (About/Privacy), not the window */
+/* ≥640px: home card tweaks — document scrolls; footer follows content (sticky footer via .site-body flex) */
 @media (min-width: 640px) {
-  html,
-  body {
-    height: 100%;
-    overflow: hidden;
-  }
-
-  .site-body {
-    height: 100dvh;
-    max-height: 100dvh;
-    overflow: hidden;
-  }
-
   body:has(.index-card) .site-main {
     flex: 1;
-    min-height: 0;
-    overflow: hidden;
     justify-content: center;
   }
 
   body:has(.index-card) .about-page {
     flex: 1;
-    min-height: 0;
-    max-height: 100%;
     padding: 0.35rem 0;
-    overflow: hidden;
     align-items: center;
     justify-content: center;
   }
@@ -39,8 +22,6 @@
   body:has(.index-card) .business-card.index-card {
     margin-top: 0;
     margin-bottom: 0;
-    max-height: 100%;
-    overflow: hidden;
     padding: 1rem 1.25rem !important;
   }
 
@@ -56,17 +37,17 @@
 
   body:has(.index-card) .index-card .display-5 {
     font-size: clamp(1.35rem, 2.8vw, 1.85rem);
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0.75rem !important;
   }
 
   body:has(.index-card) .index-card .lead {
     font-size: 0.92rem;
-    margin-bottom: 0.65rem !important;
+    margin-bottom: 0.95rem !important;
     line-height: 1.45;
   }
 
   body:has(.index-card) .index-card .skills-strip {
-    margin-bottom: 0.65rem !important;
+    margin-bottom: 0.95rem !important;
   }
 
   body:has(.index-card) .index-card .skill-pill {
@@ -75,20 +56,20 @@
   }
 
   body:has(.index-card) .index-card hr {
-    margin-top: 0.65rem !important;
-    margin-bottom: 0.65rem !important;
+    margin-top: 0.95rem !important;
+    margin-bottom: 0.95rem !important;
   }
 
   body:has(.index-card) .index-card .mb-3 {
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0.7rem !important;
   }
 
   body:has(.index-card) .index-card .mb-4 {
-    margin-bottom: 0.65rem !important;
+    margin-bottom: 0.95rem !important;
   }
 
   body:has(.index-card) .index-card p.small {
-    margin-bottom: 0.35rem !important;
+    margin-bottom: 0.5rem !important;
   }
 }
 
@@ -98,8 +79,6 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-  min-height: 0;
-  overflow-y: auto;
 }
 
 .site-header {
@@ -411,8 +390,7 @@ body::after {
 }
 
 /*
- * About & Privacy: do not use flex:1 here — that caps height to .site-main and tall content
- * gets clipped with no scroll. Grow with content so .site-main overflow-y:auto can scroll.
+ * About & Privacy: grow with content so tall pages scroll the document (footer stays after main).
  */
 .about-page:not(:has(.index-card)) {
   flex: 0 0 auto;
