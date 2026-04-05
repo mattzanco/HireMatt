@@ -443,7 +443,7 @@ body::after {
 }
 
 .home-tagline {
-  font-size: clamp(1.25rem, 2.6vw, 1.75rem);
+  font-size: 1.4em !important;
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.3;
