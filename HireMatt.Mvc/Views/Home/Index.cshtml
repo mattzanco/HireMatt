@@ -5,33 +5,60 @@
 }
 
 <div class="d-flex justify-content-center align-items-center about-page">
-    <div class="business-card p-4 p-md-5 w-100 index-card" style="max-width: 640px;">
-        <div class="text-center">
-            <p class="text-uppercase small text-muted mb-3 letter-spacing">Open to opportunities</p>
-            <h1 class="display-5 fw-bold mb-3">I build reliable software that moves your business forward</h1>
-            <p class="lead mb-4">I’m Matt Zanco — a senior full-stack engineer with 10+ years delivering systems that scale, stay maintainable, and ship on time. I communicate clearly, own outcomes, and work well async or embedded with your team.</p>
-        </div>
-        <div class="skills-strip mb-4" aria-label="Core strengths">
-            <span class="skill-pill">.NET &amp; C#</span>
-            <span class="skill-pill">Cloud (Azure / AWS)</span>
-            <span class="skill-pill">APIs &amp; data</span>
-            <span class="skill-pill">Delivery &amp; leadership</span>
-        </div>
-        <div class="text-start">
-            <p class="mb-3">Looking for a senior engineer for a greenfield build, platform modernization, or high-trust delivery? I’m open to <strong>contract or full-time</strong> roles and am <strong>remote-ready</strong> (US time zones).</p>
-            <div class="text-center mb-3 d-flex flex-column flex-sm-row gap-3 justify-content-center align-items-stretch">
-                <a asp-controller="Home" asp-action="About" class="btn btn-outline-secondary">Learn more</a>
-                <a href="mailto:mattzanco@gmail.com?subject=Opportunity%20%E2%80%94%20Matt%20Zanco" class="btn btn-hire-primary">Discuss a role</a>
-            </div>
-            <hr class="my-4" />
-            <div class="text-center">
-                <p class="small text-muted mb-3">Profiles &amp; code</p>
-                <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
-                    <a href="https://www.linkedin.com/in/matt-zanco-107723348/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-purple linkedin-btn">LinkedIn</a>
-                    <a href="https://github.com/mattzanco" target="_blank" rel="noopener noreferrer" class="btn btn-outline-success github-btn">GitHub</a>
-                    <a href="mailto:mattzanco@gmail.com?subject=Hello%20from%20hirematt" class="btn btn-outline-danger">Email</a>
+    <article class="business-card home-card p-4 p-md-5 w-100 index-card" style="max-width: 720px;">
+        <header class="home-hero">
+            <p class="home-eyebrow">Open to opportunities · Contract or full-time · Remote (US time zones)</p>
+            <h1 class="home-name">Matt Zanco</h1>
+            <p class="home-role">Senior full-stack software engineer</p>
+            <p class="home-tagline">I build reliable software that moves your business forward.</p>
+            <p class="home-intro">10+ years shipping systems that scale, stay maintainable, and land on schedule. I communicate clearly, own outcomes, and work well async or embedded with your team.</p>
+        </header>
+
+        <section class="home-values" aria-labelledby="home-values-heading">
+            <h2 id="home-values-heading" class="home-section-label">How I help teams</h2>
+            <div class="home-value-grid">
+                <div class="home-value-tile">
+                    <h3 class="home-value-title">Ship with confidence</h3>
+                    <p class="home-value-body">Predictable delivery, sensible tradeoffs, and ownership through production — not handoffs that stall.</p>
+                </div>
+                <div class="home-value-tile">
+                    <h3 class="home-value-title">Modern platforms</h3>
+                    <p class="home-value-body">.NET and cloud-native design on Azure and AWS, with APIs and data layers that stay understandable as they grow.</p>
+                </div>
+                <div class="home-value-tile">
+                    <h3 class="home-value-title">Alignment that lasts</h3>
+                    <p class="home-value-body">Documentation, crisp async communication, and stakeholder translation so engineering and business stay pointed the same direction.</p>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <section class="home-expertise" aria-labelledby="home-expertise-heading">
+            <h2 id="home-expertise-heading" class="home-section-label">Core strengths</h2>
+            <ul class="home-skill-list" aria-label="Core technical strengths">
+                <li><span class="home-skill">.NET &amp; C#</span></li>
+                <li><span class="home-skill">Cloud (Azure / AWS)</span></li>
+                <li><span class="home-skill">APIs &amp; data</span></li>
+                <li><span class="home-skill">Delivery &amp; technical leadership</span></li>
+            </ul>
+        </section>
+
+        <section class="home-cta-block" aria-label="Primary actions">
+            <p class="home-cta-lead">If you need a senior engineer for a greenfield build, platform modernization, or high-trust delivery, I would like to hear what you are building.</p>
+            <div class="home-cta-actions">
+                <a href="mailto:mattzanco@gmail.com?subject=Opportunity%20%E2%80%94%20Matt%20Zanco" class="btn btn-hire-primary btn-lg px-4">Discuss a role</a>
+                <a asp-controller="Home" asp-action="About" class="home-cta-secondary">Background &amp; experience</a>
+            </div>
+        </section>
+
+        <footer class="home-connect" aria-label="Profiles and contact">
+            <p class="home-connect-label">Also on</p>
+            <nav class="home-connect-nav" aria-label="External profiles">
+                <a href="https://www.linkedin.com/in/matt-zanco-107723348/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <span class="home-connect-dot" aria-hidden="true"></span>
+                <a href="https://github.com/mattzanco" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <span class="home-connect-dot" aria-hidden="true"></span>
+                <a href="mailto:mattzanco@gmail.com?subject=Hello%20from%20hirematt">Email</a>
+            </nav>
+        </footer>
+    </article>
 </div>
