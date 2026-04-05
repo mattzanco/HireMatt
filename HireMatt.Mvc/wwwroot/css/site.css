@@ -406,16 +406,6 @@ body::after {
     0 2px 8px rgba(37, 37, 37, 0.06);
 }
 
-.home-card-layout {
-  max-width: min(720px, 100%);
-}
-
-@media (min-width: 992px) {
-  .home-card-layout {
-    max-width: min(820px, calc(100vw - 2.5rem));
-  }
-}
-
 .home-hero {
   text-align: center;
   padding-bottom: 1.25rem;
