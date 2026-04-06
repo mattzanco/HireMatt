@@ -7,27 +7,8 @@
 
 /* ≥640px: home card tweaks — document scrolls; footer follows content (sticky footer via .site-body flex) */
 @media (min-width: 640px) {
-  body:has(.index-card) .site-main {
-    flex: 1;
-    justify-content: center;
-  }
-
-  body:has(.index-card) .about-page {
-    flex: 1;
-    padding: 0.35rem 0;
-    align-items: center;
-    justify-content: center;
-  }
-
   body:has(.index-card) .business-card.index-card {
-    margin-top: 0;
-    margin-bottom: 0;
     padding: 1rem 1.25rem !important;
-  }
-
-  body:has(.index-card) .site-header .py-2 {
-    padding-top: 0.35rem !important;
-    padding-bottom: 0.35rem !important;
   }
 
   body:has(.index-card) .site-footer .py-3 {
@@ -110,6 +91,13 @@
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(71, 74, 115, 0.12);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+}
+
+@media (min-width: 640px) {
+  .site-header .py-2 {
+    padding-top: 0.35rem !important;
+    padding-bottom: 0.35rem !important;
+  }
 }
 
 .site-brand {
@@ -642,22 +630,13 @@ body::after {
   vertical-align: middle;
 }
 
-/* Center card in main; home (with .index-card) fills main — see body:has(.index-card) rules */
+/* Card pages (home, About, Privacy): same outer spacing; grow with content so tall pages scroll */
 .about-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  flex: 1;
-  min-height: 0;
-  padding: 1rem 0;
-}
-
-/*
- * About & Privacy: grow with content so tall pages scroll the document (footer stays after main).
- */
-.about-page:not(:has(.index-card)) {
   flex: 0 0 auto;
   min-height: 100%;
   align-self: stretch;
@@ -666,12 +645,12 @@ body::after {
 }
 
 @media (min-width: 640px) {
-  .about-page:not(:has(.index-card)) {
+  .about-page {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
-  .about-page:not(:has(.index-card)) .business-card {
+  .about-page .business-card {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
   }
@@ -684,11 +663,6 @@ body::after {
   }
 
   .about-page {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
-  .about-page:not(:has(.index-card)) {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
